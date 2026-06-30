@@ -5,14 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Смета • Очень странные дела</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body { font-family: system-ui, -apple-system, sans-serif; }
-        .heading { font-family: system-ui, -apple-system, sans-serif; font-weight: 800; }
-    </style>
 </head>
 <body class="bg-zinc-950 text-white">
 
-    <div class="max-w-4xl mx-auto px-4 py-8">
+    <div class="max-w-md mx-auto px-4 py-8">
         
         <!-- Шапка -->
         <div class="mb-8 text-center">
@@ -23,106 +19,77 @@
             <p class="text-2xl text-purple-400">Очень странные дела • 05.06</p>
         </div>
 
-        <!-- Таблица с прокруткой на телефоне -->
+        <!-- Таблица -->
         <div class="bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden">
-            <div class="overflow-x-auto">
-                <table class="w-full text-sm min-w-[600px]">
-                    <thead>
-                        <tr class="bg-zinc-800">
-                            <th class="px-5 py-4 text-left font-semibold">Позиция</th>
-                            <th class="px-5 py-4 text-right font-semibold">Стоимость</th>
-                            <th class="px-5 py-4 text-center font-semibold w-20">Кол-во</th>
-                            <th class="px-5 py-4 text-right font-semibold">Сумма</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-zinc-800">
-                        <!-- строки таблицы -->
-                        <tr>
-                            <td class="px-5 py-4">Ведущие</td>
-                            <td class="px-5 py-4 text-right">8 000 ₽</td>
-                            <td class="px-5 py-4 text-center">3</td>
-                            <td class="px-5 py-4 text-right font-medium">96 000 ₽</td>
-                        </tr>
-                        <tr>
-                            <td class="px-5 py-4">Гример (профессиональный)</td>
-                            <td class="px-5 py-4 text-right">35 000 ₽</td>
-                            <td class="px-5 py-4 text-center">3</td>
-                            <td class="px-5 py-4 text-right font-medium">35 000 ₽</td>
-                        </tr>
-                        <tr>
-                            <td class="px-5 py-4">Аренда костюмов</td>
-                            <td class="px-5 py-4 text-right">20 000 ₽</td>
-                            <td class="px-5 py-4 text-center">3</td>
-                            <td class="px-5 py-4 text-right font-medium">20 000 ₽</td>
-                        </tr>
-                        <tr>
-                            <td class="px-5 py-4">Демогоргон (аренда + артист)</td>
-                            <td class="px-5 py-4 text-right">10 000 ₽</td>
-                            <td class="px-5 py-4 text-center">1</td>
-                            <td class="px-5 py-4 text-right font-medium">40 000 ₽</td>
-                        </tr>
-                        <tr>
-                            <td class="px-5 py-4">DJ</td>
-                            <td class="px-5 py-4 text-right">60 000 ₽</td>
-                            <td class="px-5 py-4 text-center">1</td>
-                            <td class="px-5 py-4 text-right font-medium">60 000 ₽</td>
-                        </tr>
-                        <tr>
-                            <td class="px-5 py-4">Видео рилсы</td>
-                            <td class="px-5 py-4 text-right">40 000 ₽</td>
-                            <td class="px-5 py-4 text-center">1</td>
-                            <td class="px-5 py-4 text-right font-medium">40 000 ₽</td>
-                        </tr>
-                        <tr>
-                            <td class="px-5 py-4">Фотограф</td>
-                            <td class="px-5 py-4 text-right">15 000 ₽</td>
-                            <td class="px-5 py-4 text-center">1</td>
-                            <td class="px-5 py-4 text-right font-medium">60 000 ₽</td>
-                        </tr>
-                        <tr>
-                            <td class="px-5 py-4">Digital Gadget</td>
-                            <td class="px-5 py-4 text-right">80 000 ₽</td>
-                            <td class="px-5 py-4 text-center">1</td>
-                            <td class="px-5 py-4 text-right font-medium">80 000 ₽</td>
-                        </tr>
-                        <tr>
-                            <td class="px-5 py-4">Шоу Треш Бокс</td>
-                            <td class="px-5 py-4 text-right">50 000 ₽</td>
-                            <td class="px-5 py-4 text-center">1</td>
-                            <td class="px-5 py-4 text-right font-medium">50 000 ₽</td>
-                        </tr>
-                        <tr>
-                            <td class="px-5 py-4">Лазерное шоу</td>
-                            <td class="px-5 py-4 text-right">60 000 ₽</td>
-                            <td class="px-5 py-4 text-center">1</td>
-                            <td class="px-5 py-4 text-right font-medium">60 000 ₽</td>
-                        </tr>
-                        <tr>
-                            <td class="px-5 py-4">Бумажная дискотека</td>
-                            <td class="px-5 py-4 text-right">60 000 ₽</td>
-                            <td class="px-5 py-4 text-center">1</td>
-                            <td class="px-5 py-4 text-right font-medium">60 000 ₽</td>
-                        </tr>
-                        <tr>
-                            <td class="px-5 py-4">Декор</td>
-                            <td class="px-5 py-4 text-right">110 000 ₽</td>
-                            <td class="px-5 py-4 text-center">1</td>
-                            <td class="px-5 py-4 text-right font-medium">110 000 ₽</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <table class="w-full text-sm">
+                <thead>
+                    <tr class="bg-zinc-800">
+                        <th class="px-5 py-4 text-left font-semibold">Позиция</th>
+                        <th class="px-5 py-4 text-right font-semibold">Сумма</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-zinc-800">
+                    <tr>
+                        <td class="px-5 py-4">Ведущие</td>
+                        <td class="px-5 py-4 text-right font-medium">96 000 ₽</td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-4">Гример (профессиональный)</td>
+                        <td class="px-5 py-4 text-right font-medium">35 000 ₽</td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-4">Аренда костюмов</td>
+                        <td class="px-5 py-4 text-right font-medium">20 000 ₽</td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-4">Демогоргон (аренда + артист)</td>
+                        <td class="px-5 py-4 text-right font-medium">40 000 ₽</td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-4">DJ</td>
+                        <td class="px-5 py-4 text-right font-medium">60 000 ₽</td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-4">Видео рилсы</td>
+                        <td class="px-5 py-4 text-right font-medium">40 000 ₽</td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-4">Фотограф</td>
+                        <td class="px-5 py-4 text-right font-medium">60 000 ₽</td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-4">Digital Gadget</td>
+                        <td class="px-5 py-4 text-right font-medium">80 000 ₽</td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-4">Шоу Треш Бокс</td>
+                        <td class="px-5 py-4 text-right font-medium">50 000 ₽</td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-4">Лазерное шоу</td>
+                        <td class="px-5 py-4 text-right font-medium">60 000 ₽</td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-4">Бумажная дискотека</td>
+                        <td class="px-5 py-4 text-right font-medium">60 000 ₽</td>
+                    </tr>
+                    <tr>
+                        <td class="px-5 py-4">Декор</td>
+                        <td class="px-5 py-4 text-right font-medium">110 000 ₽</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <!-- Итоги -->
         <div class="mt-6 bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
-            <div class="flex justify-between items-center mb-3">
-                <div class="text-lg">Итого по позициям</div>
-                <div class="text-2xl font-bold">711 000 ₽</div>
+            <div class="flex justify-between items-center mb-3 text-lg">
+                <div>Итого по позициям</div>
+                <div class="font-bold">711 000 ₽</div>
             </div>
-            <div class="flex justify-between items-center mb-4 text-purple-400">
-                <div class="text-lg">Агентская комиссия (10%)</div>
-                <div class="text-2xl font-bold">+ 71 100 ₽</div>
+            <div class="flex justify-between items-center mb-4 text-purple-400 text-lg">
+                <div>Агентская комиссия (10%)</div>
+                <div class="font-bold">+ 71 100 ₽</div>
             </div>
             <div class="border-t border-zinc-700 pt-4 flex justify-between items-center">
                 <div class="text-xl font-bold">ИТОГО К ОПЛАТЕ</div>
